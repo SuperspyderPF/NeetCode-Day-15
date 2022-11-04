@@ -1,0 +1,1 @@
+reverseList = (head,ar=[])=> { while(head){ ar.push(head.val); head = head.next;}jz = ar.reverse();h = jz.reverse().reduce((acc, curr) => { if (acc == null) {acc = new ListNode(curr); } else {acc = new ListNode(curr, acc);}return acc;}, null);return h }

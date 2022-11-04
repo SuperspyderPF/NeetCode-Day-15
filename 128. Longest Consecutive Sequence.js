@@ -1,0 +1,1 @@
+longestConsecutive = (arr,max = 0,count = 0)=> { arr = [...new Set(arr)], arr = arr.sort((a,b) => a - b); for (let i = 0; i < arr.length; i++) { if (i > 0 && arr[i] === arr[i - 1] + 1){ count++; }else{count = 1;} max = Math.max(max, count) } return max;}

@@ -1,0 +1,1 @@
+ParkingSystem = function(b, m, s) { this.count = [b, m, s]; }; ParkingSystem.prototype.addCar = function(carType) { return this.count[carType - 1]-- > 0;};

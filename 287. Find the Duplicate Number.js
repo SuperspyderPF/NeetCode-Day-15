@@ -1,0 +1,1 @@
+findDuplicate=(n, z=n.sort((a,b)=>a-b), b = z.length)=>{ for(i=0;i<b;i++) if(n[i]===n[i+1]) return n[i]}

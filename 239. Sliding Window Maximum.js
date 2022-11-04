@@ -1,0 +1,1 @@
+maxSlidingWindow = (n, k, s = [], f = [])=> { for (let func1=0; func1<k; func1++){ while (f.length && n[func1] > f[f.length-1]){ f.pop();}f.push(n[func1]);} s.push(f[0]); for (let j=k; j<n.length; j++){ if (n[j-k] == f[0]) f.shift(); while (f.length && n[j] > f[f.length-1]){ f.pop();} f.push(n[j]); s.push(f[0]);} return s;}

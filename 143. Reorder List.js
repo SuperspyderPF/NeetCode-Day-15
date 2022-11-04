@@ -1,0 +1,1 @@
+reorderList = (h, p = h, t = h.next, c = h) =>  {if(!h||!h.next) return h; while(t){t.p=p;p=t;t=t.next;} while(c!==p&&c.p!==p){next = c.next;c.next=p;p.next=next;p=p.p;c=next;}c.next=null;return h}
